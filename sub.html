@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Hai Ayanggg</h1>
+        <img src="https://i.pinimg.com/originals/57/89/1c/57891c04a3bf443357c178327c1d3a16.gif">
+        <h1>Mau Ga Jadi Pacal Aku?</h1>
+        <h4>Jawaban Kamu Telekam Di Laptop Ku</h4>
+        <button id='btn_mau' onclick='alert("Yey Aku Ditelima Jadi Pacal Bubu")'>Mau</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
